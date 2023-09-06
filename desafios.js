@@ -140,3 +140,59 @@ function booleanToString(b){
     }
 }
 
+//CASO ALTERNATIVO <=> CASO ALTERNATIVO
+
+//Defina String.prototype.toAlternatingCase(ou uma função/método semelhante, como to_alternating_case // 
+//no idioma selecionado; consulte a solução inicial para obter detalhestoAlternatingCase ) de forma que 
+//cada letra minúscula se torne maiúscula e cada letra maiúscula se torne minúscula. Por exemplo:ToAlternatingCase
+String.prototype.toAlternatingCase = function (){
+    let str = '';
+    for(let i = 0; i < this.length; i++){
+        if(this[i] == this[i].toLowerCase()){
+            str += this[i].toUpperCase();
+        } else {
+            str += this[i].toLowerCase();
+        }
+    }
+    return str;
+}
+
+//Conversão de DNA para RNA
+
+//Ácido desoxirribonucléico, DNA é a principal molécula de armazenamento de informações em sistemas biológicos.
+//É composto por quatro bases de ácidos nucleicos Guanina ('G'), Citosina ('C'), Adenina ('A') e Timina ('T').
+//O ácido ribonucleico, RNA, é a principal molécula mensageira nas células. O RNA difere ligeiramente do DNA em sua
+//estrutura química e não contém timina. No RNA, a timina é substituída por outro ácido nucleico, uracila ('U').
+//Crie uma função que traduza uma determinada sequência de DNA em RNA.
+function DNAtoRNA(dna){
+    return dna.replaceAll("T", "U");
+}
+
+//Relógio Série Iniciante #2
+
+//O relógio mostra hhoras, mminutos e ssegundos depois da meia-noite.
+//Sua tarefa é escrever uma função que retorne o tempo desde a meia-noite em milissegundos.
+function past(h,m,s){
+    segundos = s * 1000;
+    minutes = m * 60000;
+    hours = h * 3600000;
+    return segundos + minutes + hours;
+}
+
+//Trimestre do ano
+
+//Dado um mês como um número inteiro de 1 a 12, retorne a qual trimestre do ano ele pertence como um número inteiro.
+//Por exemplo: o mês 2 (fevereiro), faz parte do primeiro trimestre; o mês 6 (junho), faz parte do segundo trimestre; 
+//e o mês 11 (novembro), faz parte do quarto trimestre.
+function quarterOf(month){
+    if(month < 4){
+        return 1;
+    } else if(month < 7){
+        return 2;
+    } else if(month < 10){
+        return 3;
+    } else {
+        return 4;
+    }
+}
+
