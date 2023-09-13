@@ -196,3 +196,70 @@ function quarterOf(month){
     }
 }
 
+//Eu te amo, um pouco, muito, apaixonadamente... de jeito nenhum
+
+//Quem se lembra do tempo no pátio da escola, quando as meninas pegavam uma flor e arrancavam suas pétalas, 
+//dizendo cada uma das seguintes frases cada vez que uma pétala era rasgada:
+//"Eu te amo"; "um pouco"; "bastante"; "apaixonadamente"; "loucamente"; "de jeito nenhum"
+//Se houver mais de 6 pétalas, recomece com "I love you" 7 pétalas, "a little" 8 pétalas e assim por diante.
+//Quando a última pétala foi rasgada, houve gritos de excitação, sonhos, pensamentos e emoções emergentes.
+//Seu objetivo neste kata é determinar qual frase as meninas diriam na última pétala para uma flor com um 
+//determinado número de pétalas. O número de pétalas é sempre maior que 0.
+const phrases = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all"
+];
+function howMuchILoveYou(n){
+    return phrases[(n - 1) % phrases.length]; 
+}
+
+//Mantenha-se hidratado!
+
+//Nathan adora andar de bicicleta.
+//Como Nathan sabe que é importante manter-se hidratado, ele bebe 0,5 litro de água por hora de ciclismo.
+//Você recebe o tempo em horas e precisa retornar a quantidade de litros que Nathan irá beber, arredondado para o menor valor.
+function litres(time){
+    return Math.floor(time / 2);
+}
+
+//Retornando Strings 
+ 
+//Faça uma função que retornará uma instrução de saudação que usa uma entrada; seu programa deve retornar, 
+//"Hello, <name> how are you doing today?".
+function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+}
+
+//Documentação escolar n1 da série para iniciantes
+
+//Seus colegas pediram que você copiasse alguns papéis para eles. Você sabe que existem 'n' colegas de classe e a papelada tem 'm' páginas.
+//Sua tarefa é calcular quantas páginas em branco você precisa. Se n < 0ou m < 0retornar 0.
+function paperwork(n,m){
+    return n < 0 || m < 0 ? (n - n) * (m - m) : n * m;
+}
+
+//Encontre o próximo quadrado perfeito!
+
+//Você deve conhecer alguns quadrados perfeitos bem grandes. Mas e o PRÓXIMO? 
+//Complete o findNextSquare método que encontra o próximo quadrado perfeito integral após aquele passado como parâmetro. 
+//Lembre-se de que um quadrado perfeito integral é um número inteiro n tal que sqrt(n) também é um número inteiro.
+//Se o parâmetro em si não for um quadrado perfeito, -1deverá ser retornado. Você pode assumir que o parâmetro não é negativo.
+function findNextSquare(sq){
+    let raiz = Math.sqrt(sq);
+    return Number.isInteger(raiz) ? (raiz + 1) * (raiz + 1) : -1;
+}
+
+//Removendo elementos
+
+//Pegue um array e remova cada segundo elemento do array. Mantenha sempre o primeiro elemento e comece a remover com o próximo elemento.
+//["Keep", "Remove", "Keep", "Remove", "Keep", ...]   -->  ["Keep", "Keep", "Keep", ...]
+function removeEveryOther(arr){
+    for(let i = 0; i < arr.length; i++){
+        arr.splice(i + 1, 1);
+    }
+    return arr;
+}
