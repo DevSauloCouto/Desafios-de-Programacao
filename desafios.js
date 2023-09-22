@@ -263,3 +263,86 @@ function removeEveryOther(arr){
     }
     return arr;
 }
+
+//Corrija os erros do software de reconhecimento de caracteres
+
+//O software de reconhecimento de caracteres é amplamente utilizado para digitalizar textos impressos. Assim os textos podem ser editados, 
+//pesquisados ​​e armazenados em um computador. Quando documentos (especialmente os muito antigos escritos com uma máquina de escrever) 
+//são digitalizados, os softwares de reconhecimento de caracteres geralmente cometem erros.
+//Sua tarefa é corrigir os erros no texto digitalizado. Você só precisa lidar com os seguintes erros:
+//S é mal interpretado como 5
+//O é mal interpretado como 0
+//I é mal interpretado como 1
+//Os casos de teste contêm números apenas por engano.
+function correct(string){
+    return string.replaceAll('0','O').replaceAll('1','I').replaceAll('5','S');
+}
+
+//É um palíndromo?
+
+//Escreva uma função que verifique se uma determinada string (sem distinção entre maiúsculas e minúsculas) é um palíndromo .
+//Um palíndromo é uma palavra, número, frase ou outra sequência de símbolos que é lida da mesma forma de trás para frente, como madamou racecar.
+function isPalindrome(x){
+    let arrayString = x.split("");
+    let reverseString = arrayString.reverse();
+    let newStringInvert = reverseString.join("");
+    if(x.toUpperCase() === newStringInvert.toUpperCase()){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//Adição Binária
+
+//Implemente uma função que some dois números e retorne sua soma em binário. A conversão pode ser feita antes ou depois da adição.
+//O número binário retornado deve ser uma string.
+//Exemplos:(Entrada1, Entrada2 -> Saída (explicação)))
+//1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
+//5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+//OBS: Resolvi esse problema usando apenas minha lógica e conhecimento. Depois de estudar um pouco outras formas, descobrir maneiras
+//mais práticas.
+const addBinary = (a,b) => {
+    let resultSoma = a + b;
+    let binary = [];
+    let convert = '';
+    while(resultSoma > 0.8){
+        binary.unshift(Math.floor(resultSoma % 2));
+        resultSoma /= 2;
+    }
+    for(let char of binary){
+        convert += char;
+    }
+    return convert;
+}
+
+//Grasshopper - função de gols de Messi
+
+//Messi é um jogador de futebol com gols em três ligas: LaLiga, Copa do Rei, Campeões
+//Complete a função para retornar o número total de gols nas três ligas.
+//Nota: a entrada sempre será válida.
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals){
+    return (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
+}
+
+//Remova o mínimo
+
+//O museu de coisas incríveis e sem graça
+//O museu das coisas incríveis e sem graça quer se livrar de algumas exposições. Miriam, a arquiteta de interiores, bola um plano para 
+//retirar as exposições mais chatas. Ela atribui uma classificação a eles e, em seguida, remove aquele com a classificação mais baixa.
+//No entanto, assim que ela terminou de avaliar todas as exposições, ela está indo para uma feira importante, então ela pede que você 
+//escreva um programa que lhe diga as classificações dos itens depois que um deles tiver removido o mais baixo. Justo.
+//Tarefa
+//Dada uma matriz de números inteiros, remova o menor valor. Não altere a matriz/lista original. Se houver vários elementos com o mesmo valor,
+//remova aquele com índice inferior. Se você obtiver uma matriz/lista vazia, retorne uma matriz/lista vazia.
+//Não altere a ordem dos elementos restantes.
+//Exemplos
+//* Input: [1,2,3,4,5], output = [2,3,4,5]
+//* Input: [5,3,2,1,4], output = [5,3,2,4]
+//* Input: [2,2,1,2,1], output = [2,2,2,1]
+function removeSmallest(numbers){
+    let copyArray = numbers.slice(0);
+    let valueMin = numbers.indexOf(Math.min(...numbers));
+    let removeElement = copyArray.splice(valueMin, 1);
+    return copyArray;
+}
