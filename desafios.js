@@ -346,3 +346,115 @@ function removeSmallest(numbers){
     let removeElement = copyArray.splice(valueMin, 1);
     return copyArray;
 }
+
+
+//Classificar array por comprimento de string
+
+//Escreva uma função que receba um array de strings como argumento e retorne um array ordenado contendo as mesmas strings, ordenado do mais
+//curto para o mais longo.
+//Todas as strings no array passado para sua função terão comprimentos diferentes, então você não terá que decidir como ordenar múltiplas strings
+//do mesmo comprimento
+function sortByLength(array){
+    array.sort((x,y) => x.length - y.length);
+    return array;
+} 
+
+//Depurar dizer Olá
+
+//A nave Enterprise encontrou alguns problemas ao criar um programa para cumprimentar a todos quando eles embarcassem. É sua função consertar
+//o código e fazer o programa funcionar novamente!
+const sayHello = (name) => `Hello, ${name}`;
+
+//Iniciante - Reduza, mas cresça
+
+//Dada uma matriz não vazia de inteiros, retorne o resultado da multiplicação dos valores em ordem..
+function grow(x){
+    let result = 1;
+    for(let i = 0; i < x.length; i++){
+        result *= x[i];
+    }
+    return result;
+}
+
+//Você vai conseguir?
+
+//Você estava acampando com seus amigos longe de casa, mas quando chega a hora de voltar, você percebe que seu combustível está acabando e a 
+//bomba mais próxima está a 50km de distância! Você sabe que, em média, seu carro roda cerca de 25km por galão. Restam 2 galões.
+//Considerando esses fatores escreva uma função que diga se é possível chegar até a bomba ou não.
+//A função deve retornar true se for possível e false se não.
+const zeroFuel = (distance, media, gallons) => {
+    return media * gallons < distance ? false : true;
+}
+
+//Diferença de volume de cubóides
+
+//Neste exercício simples, você criará um programa que receba 2 listas de inteiros a e b. Cada lista consistirá em 3 números inteiros positivos
+//acima de 0, representando as dimensões dos cubóides a e b. Você deve encontrar a diferença entre os volumes dos cubóides, independentemente
+//de qual for maior.
+function findDifference(a, b) {
+    const res = (a.reduce((result, element) => result * element, 1) - b.reduce((result2, element2) => result2 * element2, 1));
+    return res < 0 ? res * -1 : res;
+}
+
+//A string termina com?
+
+//Complete a solução para que retorne verdadeiro se o primeiro argumento(string) passado terminar com o segundo argumento(também uma string).
+function solution(str, ending) {
+    let char = str;
+    const separeChar = char.split("");
+    separeChar.reverse();
+    const final = ending.split("");
+    final.reverse();
+    let verified = [];
+    let res;
+    for(let i = 0; i < final.length; i++) {
+        if(final[i] == separeChar[i]) {
+            verified.push(true);
+        } else {
+            verified.push(false);
+        }
+    }
+    if(ending == ""){
+        verified.push(true);
+    }
+    for(let i = 0; i < verified.length; i++) {
+        if(verified[i] == false) {
+            res = false;
+        }
+    }
+    if(res == false) {
+        return res;
+    } else {
+        return verified[0];
+    }
+}
+
+//Função 2 - Quadratura de um argumento
+
+//Agora você tem que escrever uma função que receba um argumento e retorne o quadrado dele.
+const square = (x) => x * x;
+
+//Conte os divisores de um número
+
+//Conte o número de divisores de um número positivo n
+//Observe que você deve retornar apenas um número, a contagem de divisores.
+function getDivisorsCnt(n) {
+    var num = 0;
+    if(n == 1) return 1;
+    if(n % Math.sqrt(n) == 0) num++;
+    for(var i = 1; i < Math.sqrt(n); i++) {
+        if(n % i == 0) {
+            num += 2;
+        }
+    }
+    return num;
+}
+
+//Dois para um
+
+//Pegue 2 strings s1 e s2 inclua apenas letras de a até z. Retorna uma nova string ordenada, a mais longa possível, contendo letras distintas -
+//cada uma retirada apenas uma vez - provenientes de s1 ou s2.
+function longest(s1, s2) {
+    let newstr = s1.concat(s2);
+    return newstr.split("").sort().reduce((a, b) => (a[a.length - 1] != b) ? (a + b) : a, ""); 
+}
