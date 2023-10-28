@@ -458,3 +458,34 @@ function longest(s1, s2) {
     let newstr = s1.concat(s2);
     return newstr.split("").sort().reduce((a, b) => (a[a.length - 1] != b) ? (a + b) : a, ""); 
 }
+
+//Ordem reversa da lista
+
+//Neste kata você criará uma função que recebe uma lista e retorna uma lista na ordem inversa.
+function reverseList(list){
+    return list.reverse();
+}
+
+//Contagem de Vogais
+
+//Retorna o número (contagem) de vogais na string fornecida.
+//Consideraremos a, e, i, o, ucomo vogais para este Kata (mas não y).
+//A string de entrada consistirá apenas de letras minúsculas e/ou espaços.
+function getCount(str){
+    const regex = /[aeiou]/gi;
+    const arr = str.match(regex);
+    return arr == null ? 0 : arr.length;
+}
+
+//Operações Matemáticas Básicas
+
+//Sua tarefa é criar uma função que execute quatro operações matemáticas básicas.
+//A função deve receber três argumentos - operação(string/char), valor1(número), valor2(número).
+//A função deve retornar resultado de números após aplicar a operação escolhida.
+function basicOp(operation, value1, value2){
+    if(operation == '+') return value1 + value2;
+    if(operation == '-') return value1 - value2;
+    if(operation == '*') return value1 * value2;
+    if(operation == '/') return value1 / value2;
+    else return "Operação Inválida";
+}
