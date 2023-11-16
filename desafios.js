@@ -1,4 +1,4 @@
-//Grasshopper - Livro de Notas
+//Grasshopper - Livro de Notas - 8 KYU
 
 //Complete a função para que ela encontre a média das três notas passadas e retorne o valor da letra associada a essa nota.
 function getGrade (s1,s2,s3) {
@@ -9,7 +9,7 @@ function getGrade (s1,s2,s3) {
         (media < 70 && media >= 60) ? 'D' : 'F';
 }
 
-//Analise o bom int do problema de char
+//Analise o bom int do problema de char - 8 KYU
 
 //Você pergunta a uma menina: "Quantos anos você tem?" Ela sempre diz “x anos”, onde x é um número aleatório entre 0 e 9.
 //Escreva um programa que retorne a idade da menina (0-9) como um número inteiro.
@@ -19,7 +19,7 @@ function getAge(inputString){
     return parseInt(inputString.substring(0,1));
 }
 
-//Contando ovelhas...
+//Contando ovelhas... - 8 KYU
 
 //Considere uma matriz/lista de ovelhas onde algumas ovelhas podem estar faltando em seu lugar. 
 //Precisamos de uma função que conte o número de ovelhas presentes no array (verdadeiro significa presente).
@@ -28,7 +28,7 @@ function countSheeps(arrayOfSheep){
     return test.length;
 }
 
-//Haverá espaço suficiente?
+//Haverá espaço suficiente? - 8 KYU
 
 //Bob está trabalhando como motorista de ônibus. No entanto, ele se tornou extremamente popular entre os moradores da cidade. 
 //Com tantos passageiros querendo embarcar em seu ônibus, ele às vezes tem que enfrentar o problema de não haver espaço suficiente no ônibus! 
@@ -48,7 +48,7 @@ function enough(cap,on,wait){
     }
 }
 
-//Retorno negativo
+//Retorno negativo - 8 KYU
 
 //Nesta tarefa simples, você recebe um número e deve torná-lo negativo. Mas talvez o número já seja negativo?
 function makeNegative(num){
@@ -61,7 +61,7 @@ function makeNegative(num){
     }
 }
 
-//Converta um número em uma string!
+//Converta um número em uma string! - 8 KYU
 
 //Precisamos de uma função que possa transformar um número (inteiro) em uma string.
 function numberToString(num){
@@ -69,14 +69,14 @@ function numberToString(num){
     return str += num;
 }
 
-//Função 1 - olá mundo
+//Função 1 - olá mundo - 8 KYU
 
 //Faça uma função simples chamada greetque retorne o mais famoso "olá mundo!".
 function greet(){
     return "hello world!";
 }
 
-//Pedra, Papel, Tesoura!
+//Pedra, Papel, Tesoura! - 8 KYU
 
 //Vamos jogar! Você tem que retornar qual jogador ganhou! Em caso de empate retorne Draw!.
 const rps = (p1,p2) => {
@@ -97,14 +97,14 @@ const rps = (p1,p2) => {
     }
 }
 
-//Você não pode codificar sob pressão
+//Você não pode codificar sob pressão - 8 KYU
 
 //Codifique o mais rápido que puder! Você precisa dobrar o número inteiro e retorná-lo
 function doubleInteger(i) {
     return i * 2;
 }
 
-//Você está tocando banjo?
+//Você está tocando banjo? - 8 KYU
 
 //Crie uma função que responda à pergunta "Você está tocando banjo?".
 //Se o seu nome começar com a letra “R” ou “r” minúsculo, você está tocando banjo!
@@ -119,7 +119,7 @@ function areYouPlayingBanjo(name) {
     }
 }
 
-//Século do ano
+//Século do ano - 8 KYU
 
 //O primeiro século abrange do ano 1 até o ano 100 inclusive , o segundo século - do ano 101 até o ano 200 inclusive , etc.
 //Tarefa: Dado um ano, retorne o século em que ele se encontra.
@@ -129,7 +129,7 @@ function century(year,seculo){
 
 }
 
-//Converter um booleano em uma string
+//Converter um booleano em uma string - 8 KYU
 
 //Implemente uma função que converta o valor booleano fornecido em sua representação de string.
 function booleanToString(b){
@@ -140,10 +140,10 @@ function booleanToString(b){
     }
 }
 
-//CASO ALTERNATIVO <=> CASO ALTERNATIVO
+//CASO ALTERNATIVO <=> CASO ALTERNATIVO - 8 KYU
 
 //Defina String.prototype.toAlternatingCase(ou uma função/método semelhante, como to_alternating_case // 
-//no idioma selecionado; consulte a solução inicial para obter detalhestoAlternatingCase ) de forma que 
+//no idioma selecionado; consulte a solução inicial para obter detalhes toAlternatingCase ) de forma que 
 //cada letra minúscula se torne maiúscula e cada letra maiúscula se torne minúscula. Por exemplo:ToAlternatingCase
 String.prototype.toAlternatingCase = function (){
     let str = '';
@@ -157,7 +157,7 @@ String.prototype.toAlternatingCase = function (){
     return str;
 }
 
-//Conversão de DNA para RNA
+//Conversão de DNA para RNA - 8 KYU
 
 //Ácido desoxirribonucléico, DNA é a principal molécula de armazenamento de informações em sistemas biológicos.
 //É composto por quatro bases de ácidos nucleicos Guanina ('G'), Citosina ('C'), Adenina ('A') e Timina ('T').
@@ -168,7 +168,7 @@ function DNAtoRNA(dna){
     return dna.replaceAll("T", "U");
 }
 
-//Relógio Série Iniciante #2
+//Relógio Série Iniciante #2 - 8 KYU
 
 //O relógio mostra hhoras, mminutos e ssegundos depois da meia-noite.
 //Sua tarefa é escrever uma função que retorne o tempo desde a meia-noite em milissegundos.
@@ -179,7 +179,7 @@ function past(h,m,s){
     return segundos + minutes + hours;
 }
 
-//Trimestre do ano
+//Trimestre do ano - 8 KYU
 
 //Dado um mês como um número inteiro de 1 a 12, retorne a qual trimestre do ano ele pertence como um número inteiro.
 //Por exemplo: o mês 2 (fevereiro), faz parte do primeiro trimestre; o mês 6 (junho), faz parte do segundo trimestre; 
@@ -196,7 +196,7 @@ function quarterOf(month){
     }
 }
 
-//Eu te amo, um pouco, muito, apaixonadamente... de jeito nenhum
+//Eu te amo, um pouco, muito, apaixonadamente... de jeito nenhum - 8 KYU
 
 //Quem se lembra do tempo no pátio da escola, quando as meninas pegavam uma flor e arrancavam suas pétalas, 
 //dizendo cada uma das seguintes frases cada vez que uma pétala era rasgada:
@@ -217,7 +217,7 @@ function howMuchILoveYou(n){
     return phrases[(n - 1) % phrases.length]; 
 }
 
-//Mantenha-se hidratado!
+//Mantenha-se hidratado! - 8 KYU
 
 //Nathan adora andar de bicicleta.
 //Como Nathan sabe que é importante manter-se hidratado, ele bebe 0,5 litro de água por hora de ciclismo.
@@ -226,7 +226,7 @@ function litres(time){
     return Math.floor(time / 2);
 }
 
-//Retornando Strings 
+//Retornando Strings - 8 KYU
  
 //Faça uma função que retornará uma instrução de saudação que usa uma entrada; seu programa deve retornar, 
 //"Hello, <name> how are you doing today?".
@@ -234,7 +234,7 @@ function greet(name){
     return `Hello, ${name} how are you doing today?`;
 }
 
-//Documentação escolar n1 da série para iniciantes
+//Documentação escolar n1 da série para iniciantes - 8 KYU
 
 //Seus colegas pediram que você copiasse alguns papéis para eles. Você sabe que existem 'n' colegas de classe e a papelada tem 'm' páginas.
 //Sua tarefa é calcular quantas páginas em branco você precisa. Se n < 0ou m < 0retornar 0.
@@ -242,7 +242,7 @@ function paperwork(n,m){
     return n < 0 || m < 0 ? (n - n) * (m - m) : n * m;
 }
 
-//Encontre o próximo quadrado perfeito!
+//Encontre o próximo quadrado perfeito! - 7 KYU
 
 //Você deve conhecer alguns quadrados perfeitos bem grandes. Mas e o PRÓXIMO? 
 //Complete o findNextSquare método que encontra o próximo quadrado perfeito integral após aquele passado como parâmetro. 
@@ -253,7 +253,7 @@ function findNextSquare(sq){
     return Number.isInteger(raiz) ? (raiz + 1) * (raiz + 1) : -1;
 }
 
-//Removendo elementos
+//Removendo elementos - 8 KYU
 
 //Pegue um array e remova cada segundo elemento do array. Mantenha sempre o primeiro elemento e comece a remover com o próximo elemento.
 //["Keep", "Remove", "Keep", "Remove", "Keep", ...]   -->  ["Keep", "Keep", "Keep", ...]
@@ -264,7 +264,7 @@ function removeEveryOther(arr){
     return arr;
 }
 
-//Corrija os erros do software de reconhecimento de caracteres
+//Corrija os erros do software de reconhecimento de caracteres - 8 KYU
 
 //O software de reconhecimento de caracteres é amplamente utilizado para digitalizar textos impressos. Assim os textos podem ser editados, 
 //pesquisados ​​e armazenados em um computador. Quando documentos (especialmente os muito antigos escritos com uma máquina de escrever) 
@@ -278,7 +278,7 @@ function correct(string){
     return string.replaceAll('0','O').replaceAll('1','I').replaceAll('5','S');
 }
 
-//É um palíndromo?
+//É um palíndromo? - 8 KYU
 
 //Escreva uma função que verifique se uma determinada string (sem distinção entre maiúsculas e minúsculas) é um palíndromo .
 //Um palíndromo é uma palavra, número, frase ou outra sequência de símbolos que é lida da mesma forma de trás para frente, como madamou racecar.
@@ -293,7 +293,7 @@ function isPalindrome(x){
     }
 }
 
-//Adição Binária
+//Adição Binária - 7 KYU
 
 //Implemente uma função que some dois números e retorne sua soma em binário. A conversão pode ser feita antes ou depois da adição.
 //O número binário retornado deve ser uma string.
@@ -316,7 +316,7 @@ const addBinary = (a,b) => {
     return convert;
 }
 
-//Grasshopper - função de gols de Messi
+//Grasshopper - função de gols de Messi - 8 KYU
 
 //Messi é um jogador de futebol com gols em três ligas: LaLiga, Copa do Rei, Campeões
 //Complete a função para retornar o número total de gols nas três ligas.
@@ -325,7 +325,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals){
     return (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
 }
 
-//Remova o mínimo
+//Remova o mínimo - 7 KYU
 
 //O museu de coisas incríveis e sem graça
 //O museu das coisas incríveis e sem graça quer se livrar de algumas exposições. Miriam, a arquiteta de interiores, bola um plano para 
@@ -348,7 +348,7 @@ function removeSmallest(numbers){
 }
 
 
-//Classificar array por comprimento de string
+//Classificar array por comprimento de string - 7 KYU
 
 //Escreva uma função que receba um array de strings como argumento e retorne um array ordenado contendo as mesmas strings, ordenado do mais
 //curto para o mais longo.
@@ -359,13 +359,13 @@ function sortByLength(array){
     return array;
 } 
 
-//Depurar dizer Olá
+//Depurar dizer Olá - 8 KYU
 
 //A nave Enterprise encontrou alguns problemas ao criar um programa para cumprimentar a todos quando eles embarcassem. É sua função consertar
 //o código e fazer o programa funcionar novamente!
 const sayHello = (name) => `Hello, ${name}`;
 
-//Iniciante - Reduza, mas cresça
+//Iniciante - Reduza, mas cresça - 8 KYU
 
 //Dada uma matriz não vazia de inteiros, retorne o resultado da multiplicação dos valores em ordem..
 function grow(x){
@@ -376,7 +376,7 @@ function grow(x){
     return result;
 }
 
-//Você vai conseguir?
+//Você vai conseguir? - 8 KYU
 
 //Você estava acampando com seus amigos longe de casa, mas quando chega a hora de voltar, você percebe que seu combustível está acabando e a 
 //bomba mais próxima está a 50km de distância! Você sabe que, em média, seu carro roda cerca de 25km por galão. Restam 2 galões.
@@ -386,7 +386,7 @@ const zeroFuel = (distance, media, gallons) => {
     return media * gallons < distance ? false : true;
 }
 
-//Diferença de volume de cubóides
+//Diferença de volume de cubóides - 8 KYU
 
 //Neste exercício simples, você criará um programa que receba 2 listas de inteiros a e b. Cada lista consistirá em 3 números inteiros positivos
 //acima de 0, representando as dimensões dos cubóides a e b. Você deve encontrar a diferença entre os volumes dos cubóides, independentemente
@@ -396,7 +396,7 @@ function findDifference(a, b) {
     return res < 0 ? res * -1 : res;
 }
 
-//A string termina com?
+//A string termina com? - 7 KYU
 
 //Complete a solução para que retorne verdadeiro se o primeiro argumento(string) passado terminar com o segundo argumento(também uma string).
 function solution(str, ending) {
@@ -429,12 +429,12 @@ function solution(str, ending) {
     }
 }
 
-//Função 2 - Quadratura de um argumento
+//Função 2 - Quadratura de um argumento - 8 KYU
 
 //Agora você tem que escrever uma função que receba um argumento e retorne o quadrado dele.
 const square = (x) => x * x;
 
-//Conte os divisores de um número
+//Conte os divisores de um número - 7 KYU
 
 //Conte o número de divisores de um número positivo n
 //Observe que você deve retornar apenas um número, a contagem de divisores.
@@ -450,7 +450,7 @@ function getDivisorsCnt(n) {
     return num;
 }
 
-//Dois para um
+//Dois para um - 7 KYU
 
 //Pegue 2 strings s1 e s2 inclua apenas letras de a até z. Retorna uma nova string ordenada, a mais longa possível, contendo letras distintas -
 //cada uma retirada apenas uma vez - provenientes de s1 ou s2.
@@ -459,14 +459,14 @@ function longest(s1, s2) {
     return newstr.split("").sort().reduce((a, b) => (a[a.length - 1] != b) ? (a + b) : a, ""); 
 }
 
-//Ordem reversa da lista
+//Ordem reversa da lista - 8 KYU
 
 //Neste kata você criará uma função que recebe uma lista e retorna uma lista na ordem inversa.
 function reverseList(list){
     return list.reverse();
 }
 
-//Contagem de Vogais
+//Contagem de Vogais - 7 KYU
 
 //Retorna o número (contagem) de vogais na string fornecida.
 //Consideraremos a, e, i, o, ucomo vogais para este Kata (mas não y).
@@ -477,7 +477,7 @@ function getCount(str){
     return arr == null ? 0 : arr.length;
 }
 
-//Operações Matemáticas Básicas
+//Operações Matemáticas Básicas - 8 KYU
 
 //Sua tarefa é criar uma função que execute quatro operações matemáticas básicas.
 //A função deve receber três argumentos - operação(string/char), valor1(número), valor2(número).
@@ -488,4 +488,102 @@ function basicOp(operation, value1, value2){
     if(operation == '*') return value1 * value2;
     if(operation == '/') return value1 / value2;
     else return "Operação Inválida";
+}
+
+//Soma de matriz mista - 8 KYU
+
+//Dado um array de inteiros como strings e números, retorne a soma dos valores do array como se todos fossem números.
+//Retorne sua resposta como um número.
+function sumMix(x){
+    const number = 0;
+    const result = x.reduce((acc, val) => +acc + +val, number);
+    return result;
+}
+
+//Palavra com maior pontuação - 6 KYU (PRIMEIROOOOO)
+
+//Dada uma sequência de palavras, você precisa encontrar a palavra com pontuação mais alta.
+//Cada letra de uma palavra ganha pontos de acordo com sua posição no alfabeto: a = 1, b = 2, c = 3 etc.
+//Por exemplo, a pontuação de abad é 8(1 + 2 + 1 + 4).
+//Você precisa retornar a palavra com pontuação mais alta como uma string.
+//Se duas palavras tiverem a mesma pontuação, retorne a palavra que aparece primeiro na string original.
+//Todas as letras serão minúsculas e todas as entradas serão válidas.
+function high(x){
+    const words = x.split(" ");
+    let pointsWord = 0;
+    let word = "";
+    for(let i = 0; i < words.length; i++) {
+        arrPoints = [];
+        for(let j = 0; j < words[i].length; j++) {
+            const alphabet = ['','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+            const letters = alphabet.indexOf(words[i][j]);
+            arrPoints.push(letters);
+            result = arrPoints.reduce((acc, val) => acc + val, 0);
+        }
+        if(pointsWord < result){
+            pointsWord = result;
+            word = words[i];
+        }
+        arrPoints = [];
+    }
+    return word;
+}
+
+//Você é um quadrado - 7 KYU
+
+//Tarefa
+//Dado um número inteiro, determine se é um número quadrado :
+var isSquare = function(n){
+    return Number.isInteger(Math.sqrt(n)) && Math.sqrt(n) * Math.sqrt(n) == n ? true : false;
+}
+
+//Soma Quadrada(n) - 8 KYU
+
+//Complete a função de soma quadrada de modo que eleve ao quadrado cada número passado para ela e, em seguida, some os resultados.
+//Por exemplo, for [1, 2, 2]deve retornar 9 porque 1^2 + 2^2 + 2^2 = 9
+function squareSum(numbers){
+    return numbers.reduce((acc, value) => acc + (value * value), 0);
+}
+
+//Cordas invertidas - 8 KYU
+
+//Complete a solução para que ela inverta a string passada para ela.
+function solution(str){
+    return str.split("").reverse().join("");
+}
+
+//Uma agulha no palheiro - 8 KYU
+
+//Você consegue encontrar a agulha no palheiro?
+//Escreva uma função findNeedle() que receba um array monte de lixo, mas que contenha um "needle"
+//Depois que sua função encontrar a agulha ela deverá retornar uma mensagem (como uma string) que diz:
+//"found the needle at position "mais o index que encontrou a agulha, então:
+function findNeedle(haystack) {
+    const indice = haystack.indexOf("needle");
+    return `found the needle at position ${indice}`
+}
+
+//Removendo espaços de string - 8 KYU
+
+//Escreva uma função que remova os espaços da string e retorne a string resultante.
+function noSpace(x){
+    const result = x.match(/\S/g).join("");
+    return result;
+}
+
+//Matriz.diff - 6 KYU
+
+//Seu objetivo neste kata é implementar uma função diferença, que subtrai uma lisTa de outra e retorna o resultado.
+//Deve remover todos os valores de list a, que estão presentes em list b mantendo sua ordem.
+//array_diff({1, 2}, 2, {1}, 1, *z) == {2} (z == 1)
+//Se um valor estiver presente em b, todas as suas ocorrências deverão ser removidas do outro:
+//array_diff({1, 2, 2, 2, 3}, 5, {2}, 1, *z) == {1, 3} (z == 2)
+function arrayDiff(a, b) {
+    const res = [];
+    a.forEach(value => {
+      if(!b.includes(value)){
+        res.push(value);
+      }
+    })
+    return res;
 }
