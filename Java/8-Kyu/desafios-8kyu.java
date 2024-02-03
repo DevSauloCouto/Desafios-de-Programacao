@@ -203,3 +203,12 @@ public class Kata {
         return array;
     }
 }
+
+//Obter caracteres do valor ASCII
+
+//Escreva uma função que receba um número e retorne o caracter ASCII correspondente para esse valor.
+public class Ascii {
+    public static char getChar(int c) {
+      return (char) c;
+    }
+}
